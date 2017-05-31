@@ -67,7 +67,21 @@ def consume(country):
 for country in countries:
     totals[country] = consume(country)
     
-print(totals)    
+print(totals)
+
+## Finding The Country That Drinks The Most
+
+highest_value = 0
+highest_key = None
+
+for country in totals:
+    highest_count = totals[country] # this is value associated with the key
+    if highest_count > highest_value:
+        highest_value = highest_count
+        highest_key = country # this is the key or country with highest consumption
+
+
+##End        
 
 
 
