@@ -98,3 +98,5 @@ temperatures = [122.5, 124.0, 134.1, 103.1, 112.5, 128.3]
 countries_slice = countries[1:4]
 end = len(temperatures)
 temperatures_slice = temperatures[3:end]
+
+##  END
