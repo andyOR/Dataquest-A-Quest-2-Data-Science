@@ -15,7 +15,7 @@
 ###     titanic
 ### d. "all-ages.csv" file for all ages group employment data ###     and "recent-grads.csv" file recent grads from majors
 ###     employment data
-### e. "fandango_score_comparison.csv" file containing user 
+#### e. "fandango_score_comparison.csv" file containing user 
 ###     ratings on movies by users and critics on different
 ###     platforms of rottentomatoes, fandango, etc
 
