@@ -14,3 +14,4 @@
 #### e. "fandango_score_comparison.csv" file containing user ratings on movies by users and critics on different platforms of rottentomatoes, fandango, etc
 #### f. "unrate.csv" file on monthly unemployment rate in US from 1948 till August 2016
 #### g. "percent-bachelors-degrees-women-usa.csv" file on on percentage of bachelor's degrees gratnted to women from 1970 to 2012
+#### h. "train.csv" file of the titanic shipwreck used on Kaggle learning platform to build machine learning model to predict the surviving chances of passenger. It can be downloaded from https://www.kaggle.com/c/titanic/data
