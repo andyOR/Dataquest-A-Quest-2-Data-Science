@@ -4,7 +4,7 @@
 ### Files are added as I progress on the course
 
 ## 2. Data Analysis and Visualization 
-###     This is the second course in the data scientist path. In this course, I have learnt NumPy, Pandas libraries, Data manipulation, working with missing data, creating Line Charts, Multiple plots, histograms, bar and scatter plots, conditional plots etc.
+###     This is the second course in the data scientist path. In this course, I have learnt NumPy, Pandas libraries, Data manipulation, working with missing data, creating Line Charts, Multiple plots, histograms, bar and scatter plots, conditional plots etc.It also includes data cleaning techniques, merging different datasets.
 
 ### Datasets used in this course includes:
 #### a. "world_alcohol.csv" file which contains data consumption    of alcohol per capita in different countries
@@ -16,3 +16,5 @@
 #### g. "percent-bachelors-degrees-women-usa.csv" file on on percentage of bachelor's degrees gratnted to women from 1970 to 2012
 #### h. "train.csv" file of the titanic shipwreck used on Kaggle learning platform to build machine learning model to predict the surviving chances of passenger. It can be downloaded from https://www.kaggle.com/c/titanic/data
 #### i. "airlines.csv", "airports.csv", and "routes.csv" files describing Geographic dataset to visualize the data on maps. This dataset can be accessed from https://openflights.org/data.html
+#### j. Data on New york city public schools with SAT scores and demographic information to analyzing correlation between them. This data set can be found at
+https://data.cityofnewyork.us/browse?category=Education
