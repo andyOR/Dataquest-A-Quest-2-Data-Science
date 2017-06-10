@@ -55,7 +55,7 @@ china_celsius = (china - 32) * 0.56
 india_celsius = (india - 32) * 0.56
 us_celsius = (united_states - 32) * 0.56
 
-## Using A List To Store Multiple Values. We use append feature t0 add values in list
+## Using A List To Store Multiple Values. We use append feature to add values in list
 countries = []
 temperatures = []
 countries.append("China")

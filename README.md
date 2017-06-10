@@ -3,6 +3,13 @@
 
 ### Files are added as I progress on the course
 
+## 1. Python Programming
+
+### This is first course in Data Science Path. In this course, I have learnt the basics of python including files and loop.
+
+### Datasets used in this course includes:
+#### a. "crime_rates.csv" contains crime rate data for 73 cities in the United States
+
 ## 2. Data Analysis and Visualization 
 ###     This is the second course in the data scientist path. In this course, I have learnt NumPy, Pandas libraries, Data manipulation, working with missing data, creating Line Charts, Multiple plots, histograms, bar and scatter plots, conditional plots etc.It also includes data cleaning techniques, merging different datasets.
 
