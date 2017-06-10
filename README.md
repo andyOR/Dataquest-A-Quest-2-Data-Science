@@ -9,6 +9,7 @@
 
 ### Datasets used in this course includes:
 #### a. "crime_rates.csv" contains crime rate data for 73 cities in the United States
+#### b. "dq_unisex_names.csv" containing the common unisex names in the United States. This was compiled by FiveThirtyEight from social security adinistration website https://www.ssa.gov/oact/babynames/limits.html
 
 ## 2. Data Analysis and Visualization 
 ###     This is the second course in the data scientist path. In this course, I have learnt NumPy, Pandas libraries, Data manipulation, working with missing data, creating Line Charts, Multiple plots, histograms, bar and scatter plots, conditional plots etc.It also includes data cleaning techniques, merging different datasets.
