@@ -1,8 +1,5 @@
 # Dataquest: Path to Data Science
 
-
-### Files are added as I progress on the course
-
 ## 1. Python Programming
 
 ### This is first course in Data Science Path. In this course, I have learnt the basics of python including files and loop, List operations, dictionaries and creating functions.
