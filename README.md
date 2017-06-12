@@ -1,4 +1,4 @@
-# Dataquest: Path to Data Science
+s# Dataquest: Path to Data Science
 
 ## 1. Python Programming
 
@@ -9,6 +9,7 @@
 #### b. "dq_unisex_names.csv" containing the common unisex names in the United States. This was compiled by FiveThirtyEight from social security adinistration website https://www.ssa.gov/oact/babynames/limits.html
 #### c. "la_weather.csv" contains daily weather data for Los Angeles (L.A.) during 2014
 #### d. "dictionary.txt" containing correctly spell words to check other files for incorrect words
+#### d. "birth.csv" contains U.S. births data set of babies born on different dates of the month and days of the week. This was used to analyze a superstitious notion around Birthday among Parents
 
 
 ## 2. Data Analysis and Visualization 
