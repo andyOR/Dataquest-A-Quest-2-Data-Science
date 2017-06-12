@@ -1,4 +1,4 @@
-s# Dataquest: Path to Data Science
+# Dataquest: Path to Data Science
 
 ## 1. Python Programming
 
