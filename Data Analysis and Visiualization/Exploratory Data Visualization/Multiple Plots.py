@@ -130,7 +130,7 @@ for i in range(5):
     end_index = (i+1)*12
     subset = unrate[start_index:end_index]
     label = str(1948 + i)
-    plt.plot(subset['MONTH'], subset['VALUE'], c=colors[i], label=label)
+    plt.plot(subset['MONTH'], subset['UNRATE'], c=colors[i], label=label)
 plt.legend(loc='upper left')
 plt.xlabel("Month, Integer")
 plt.ylabel("Unemployment Rate, Percent")

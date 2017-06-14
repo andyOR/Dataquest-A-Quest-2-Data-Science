@@ -26,6 +26,7 @@ https://github.com/fivethirtyeight/data/tree/master/college-majors.
 This file can be downloaded from this repository "https://github.com/fivethirtyeight/data/tree/master/fandango"
 #### e1. "thanksgiving.csv" containing survey of thanksgiving data among consumers. It contains 1058 responses. Most of the column names are questions, and most of the column values are string responses to the questions. The dataset came from FiveThirtyEight, and can be found at https://github.com/fivethirtyeight/data/tree/master/thanksgiving-2015
 #### f. "unrate.csv" file on monthly unemployment rate in US from 1948 till August 2016
+#### f1. "recent-grads.csv" containing use dataset on the job outcomes of students who graduated from college between 2010 and 2012. The original data on job outcomes was released by American Community Survey, which conducts surveys and aggregates the data. FiveThirtyEight cleaned the dataset and released it here https://github.com/fivethirtyeight/data/blob/master/college-majors/recent-grads.csv
 #### g. "percent-bachelors-degrees-women-usa.csv" file on on percentage of bachelor's degrees gratnted to women from 1970 to 2012
 #### h. "train.csv" file of the titanic shipwreck used on Kaggle learning platform to build machine learning model to predict the surviving chances of passenger. It can be downloaded from https://www.kaggle.com/c/titanic/data
 #### i. "airlines.csv", "airports.csv", and "routes.csv" files describing Geographic dataset to visualize the data on maps. This dataset can be accessed from https://openflights.org/data.html
