@@ -1,5 +1,5 @@
 ## In this script, we will be working on a challenge to apply all the previous learnings
-## we had from the data visulaization in dataquest
+## we had from the data visualization in dataquest
 
 ## Introduction To The Data.
 
@@ -19,11 +19,11 @@ print(recent_grads[0:5])
 
 ## Summarizing Major Categories
 
-# Unique values in Major_category column.
+# Unique values in Major_category column and number of members in each dataset
 print(all_ages['Major_category'].unique())
 
 aa_cat_counts = dict()
-rg_cat_counts = dict()
+rg_cat_counts = dict()# dictionary assignement in pandas
 
 unique_category1 = all_ages['Major_category'].unique()
 unique_category2 = recent_grads['Major_category'].unique()

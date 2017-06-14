@@ -2,7 +2,7 @@
 # with NumPy
 
 
-## Array Comparison. This will compare values in t he dataset with given values.
+## Array Comparison. This will compare values in the dataset with given values.
 ## It will store them in another matrix with boolean results
 
 countries_canada = world_alcohol[:,2] == "Canada"
@@ -12,9 +12,9 @@ years_1984 = world_alcohol[:,0] == "1984"
 ## Selecting elements. This will be used extract values where array comprison is positive
 
 country_is_algeria = world_alcohol[:,2] == "Algeria"
-country_algeria = world_alcohol[country_is_algeria,:]
+country_algeria = world_alcohol[country_is_algeria,:]# extracts all rows where column 2 has algeria
 
-# Comparison can ne done using multiple conditions as well using and "&" and or "|"
+# Comparison can be done using multiple conditions as well using and "&" and or "|"
 is_algeria_and_1986 = (world_alcohol[:,0] == "1986") & (world_alcohol[:,2] == "Algeria")
 rows_with_algeria_and_1986 = world_alcohol[is_algeria_and_1986,:]
 

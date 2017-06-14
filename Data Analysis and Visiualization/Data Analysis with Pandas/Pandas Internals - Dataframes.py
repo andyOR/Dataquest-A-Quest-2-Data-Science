@@ -46,6 +46,7 @@ float_df = fandango_films[float_columns]
 
 # `x` is a Series object representing a column
 deviations = float_df.apply(lambda x: np.std(x))
+print(deviations)
 
 
 ## Apply() Logic Over Columns: Practice
@@ -70,11 +71,3 @@ print(rt_mt_means[0:5])
 ## End
 
 
-
-
-
-
-
-
-
-print(deviations)

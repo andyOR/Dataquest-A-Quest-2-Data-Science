@@ -1,4 +1,4 @@
-# In this script, we will be using "world_alcohol.csv" file which contains data consumption of alcohol per capita in different countries
+# In this script, we will be using "world_alcohol.csv" file which contains data of alcohol consumption per capita in different countries
 
 ## The dataset contains five columns representing year of data (Year), region in which the country is located (WHO), country,
 ##type of alcohol consumed (Beverage types), and avergage number of liters alcohol consumed (Display Value)
@@ -12,7 +12,7 @@ world_alcohol = list(alcohol_data)
 
 world_alcohol = world_alcohol[1:]
 
-## Performing addition and avergae function on year column
+## Performing addition and average function on year column
 years = []
 
 for row in world_alcohol:
@@ -39,7 +39,7 @@ vector  = numpy.array([10, 20, 30]) #one dimensional array
 
 matrix = numpy.array([[5, 10, 15], [20, 25, 30], [35, 40, 45]]) # two dimensional array often used for list of lists
 
-## Array shape. function "ndarray.shape()" will help us to find the property of matrices like rows and columns
+## Array shape. function "ndarray.shape" will help us to find the property of matrices like rows and columns
 #Note: shape property output tuple with number of elements. A tuple is a list where elements can't be altered
 
 vector = numpy.array([10, 20, 30])
@@ -48,15 +48,15 @@ vector_shape = vector.shape
 matrix = numpy.array([[5, 10, 15], [20, 25, 30], [35, 40, 45]])
 matrix_shape = matrix.shape
 
-## Data types in NumPy. Some of the data types in NumPy are boolen, integers, float, etc. Type of data can be checked using "dtype"
+## Data types in NumPy. Some of the data types in NumPy are boolean, integers, float, etc. Type of data can be checked using "dtype"
 
 world_alcohol_dtype = world_alcohol.dtype
 
-##All the values in NumPy has to be of the same data type. NumPy will convert all the diiferent data type into same data type
+##All the values in NumPy has to be of the same data type. NumPy will convert all the different data types into same data type
 
 ##Reading the data properly. We can use different set properties in numpy.genfrmtxt() to read data with different data types
 # dtype U75 for data type, skip_header to skip header row
-world_alcohol = numpy.genfromtxt("world_alcohol.csv", delimiter = ",", dtype = "U75", skip_header = 1)
+world_alcohol = numpy.genfromtxt("world_alcohol.csv", delimiter = ",", dtype = "U75", skip_header = 1) #we want to read in each value as a 75 byte unicode data type
 print(world_alcohol)
 
 ##Indexing arrays
@@ -66,7 +66,7 @@ third_country = world_alcohol[2,2] #extracting country from row 3
 
 ## Slicing arrays. it has four forms to slice lists
 countries = world_alcohol[:,2]# extracting entire third column
-alcohol_consumption = world_alcohol[:,4] # etracting fourth column
+alcohol_consumption = world_alcohol[:,4] # extracting fifth column
 
 ## Slicing one dimension
 first_two_columns = world_alcohol[:,0:2]

@@ -18,9 +18,13 @@ s# Dataquest: Path to Data Science
 ### Datasets used in this course includes:
 #### a. "world_alcohol.csv" file which contains data consumption    of alcohol per capita in different countries
 #### b. "food_info.csv" file containing nutritional information   on the most common foods Americans consume
+https://www.ars.usda.gov/northeast-area/beltsville-md/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/usda-national-nutrient-database-for-standard-reference/
 #### c. "titanic_survival.csv" file containing titanic dataset    and information on the passengers travelling through titanic
-#### d. "all-ages.csv" file for all ages group employment data and "recent-grads.csv" file on recent grads from majors employment data
+#### d. "all-ages.csv" file for all ages group employment data and "recent-grads.csv" file on recent grads from majors employment data. FiveThirtyEight cleaned the data set and made it available in a Github repository
+https://github.com/fivethirtyeight/data/tree/master/college-majors. 
 #### e. "fandango_score_comparison.csv" file containing user ratings on movies by users and critics on different platforms of rottentomatoes, fandango, etc
+This file can be downloaded from this repository "https://github.com/fivethirtyeight/data/tree/master/fandango"
+#### e1. "thanksgiving.csv" containing survey of thanksgiving data among consumers. It contains 1058 responses. Most of the column names are questions, and most of the column values are string responses to the questions. The dataset came from FiveThirtyEight, and can be found at https://github.com/fivethirtyeight/data/tree/master/thanksgiving-2015
 #### f. "unrate.csv" file on monthly unemployment rate in US from 1948 till August 2016
 #### g. "percent-bachelors-degrees-women-usa.csv" file on on percentage of bachelor's degrees gratnted to women from 1970 to 2012
 #### h. "train.csv" file of the titanic shipwreck used on Kaggle learning platform to build machine learning model to predict the surviving chances of passenger. It can be downloaded from https://www.kaggle.com/c/titanic/data
