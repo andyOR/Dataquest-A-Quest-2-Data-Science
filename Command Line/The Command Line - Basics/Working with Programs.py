@@ -16,5 +16,4 @@ OPERATING_SYSTEM="linux"
 # Bash is sensitive to spaces, so strings that have them won't work properly if we don't surround them with quotes
 
 
-## Accessing Variables
 

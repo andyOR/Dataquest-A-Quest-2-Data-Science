@@ -32,3 +32,4 @@ This file can be downloaded from this repository "https://github.com/fivethirtye
 #### i. "airlines.csv", "airports.csv", and "routes.csv" files describing Geographic dataset to visualize the data on maps. This dataset can be accessed from https://openflights.org/data.html
 #### j. Data on New york city public schools with SAT scores and demographic information to analyzing correlation between them. This data set can be found at
 https://data.cityofnewyork.us/browse?category=Education
+#### h. Civil Rights Data Collection containing information on educational achievement and opportunities in the U.S., broken down by race and school https://catalog.data.gov/dataset/civil-rights-data-collection-2013-14
