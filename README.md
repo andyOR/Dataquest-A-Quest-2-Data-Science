@@ -34,7 +34,7 @@ This file can be downloaded from this repository "https://github.com/fivethirtye
 https://data.cityofnewyork.us/browse?category=Education
 #### h. Civil Rights Data Collection containing information on educational achievement and opportunities in the U.S., broken down by race and school https://catalog.data.gov/dataset/civil-rights-data-collection-2013-14
 
-##3. The Command Line
+## 3. The Command Line
 ###  This is the third course in data science path. In this course, I have learnt about the command line interface. A command line interface lets us switch between folders and launch programs by typing commands. A command line interface is often faster and more powerful than a GUI for programming tasks.
 
 ### This course includes:
