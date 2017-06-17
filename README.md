@@ -33,3 +33,22 @@ This file can be downloaded from this repository "https://github.com/fivethirtye
 #### j. Data on New york city public schools with SAT scores and demographic information to analyzing correlation between them. This data set can be found at
 https://data.cityofnewyork.us/browse?category=Education
 #### h. Civil Rights Data Collection containing information on educational achievement and opportunities in the U.S., broken down by race and school https://catalog.data.gov/dataset/civil-rights-data-collection-2013-14
+
+##3. The Command Line
+###  This is the third course in data science path. In this course, I have learnt about the command line interface. A command line interface lets us switch between folders and launch programs by typing commands. A command line interface is often faster and more powerful than a GUI for programming tasks.
+
+### This course includes:
+#### a. Command Line Basics
+#### b. Working with files through command line
+#### c. Command Line python scripting
+#### d. Working with programs through command line
+#### e. Working with downloads in command line
+#### f. Working with Jupyter console from command line
+#### g. Challenge- Data Munging Using The Command Line
+#### h. Piping and redirecting output
+#### i. Transforming data with Python
+
+### Datasets used in this course includes:
+#### a. "hn_stories.csv" conatining dataset of submissions to Hacker News from 2006 to 2015. Hacker News is a site where users can submit articles from across the internet and others can "upvote" the articles, signifying that they like them.
+dataset compiled by Arnaud Drizard can be found here
+https://github.com/arnauddri/hn 
