@@ -47,8 +47,20 @@ https://data.cityofnewyork.us/browse?category=Education
 #### g. Challenge- Data Munging Using The Command Line
 #### h. Piping and redirecting output
 #### i. Transforming data with Python
+#### f. Data Cleaning and Exploration using Csvkit
+#### g. Git and Version Control
 
 ### Datasets used in this course includes:
 #### a. "hn_stories.csv" conatining dataset of submissions to Hacker News from 2006 to 2015. Hacker News is a site where users can submit articles from across the internet and others can "upvote" the articles, signifying that they like them.
 dataset compiled by Arnaud Drizard can be found here
 https://github.com/arnauddri/hn 
+
+## 4. Working with Data Sources
+### This is fourth course in data science path. In this course, I have learnt about working with data in different locations, including databases and on the web.
+
+### This course includes:
+#### a. Working with APIs
+#### b. Intermediate APIs
+#### c. Working with Reddit API
+#### d. Web Scraping
+#### e. Introduction to SQL
