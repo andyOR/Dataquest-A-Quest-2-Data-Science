@@ -70,7 +70,7 @@ survey["DBN"] = survey["dbn"] # changing column name to uppercase for matching w
 
 fields = ["DBN","rr_s", "rr_t", "rr_p", "N_s", "N_t", "N_p", "saf_p_11", "com_p_11", "eng_p_11", "aca_p_11", "saf_t_11", "com_t_11", "eng_t_11", "aca_t_11", "saf_s_11", "com_s_11", "eng_s_11", "aca_s_11", "saf_tot_11", "com_tot_11", "eng_tot_11", "aca_tot_11"]
 
-survey = survey.loc[:,fields]
+survey = survey.loc[:,fields] # only interested columns and all rows
 data['survey'] = survey
 print(survey.head(5))
 
