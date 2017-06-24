@@ -13,7 +13,7 @@
 
 
 ## 2. Data Analysis and Visualization 
-###     This is the second course in the data scientist path. In this course, I have learnt NumPy, Pandas libraries, Data manipulation, working with missing data, creating Line Charts, Multiple plots, histograms, bar and scatter plots, conditional plots etc.It also includes data cleaning techniques, merging different datasets.
+###     This is the second course in the data scientist path. In this course, I have learnt NumPy, Pandas libraries (pandas internals, series, dataframes), Data manipulation, working with missing data, creating Line Charts, Multiple plots, histograms, bar and scatter plots, conditional plots etc.It also includes data cleaning techniques, merging different datasets, analyzing and visualizing data.
 
 ### Datasets used in this course includes:
 #### a. "world_alcohol.csv" file which contains data consumption    of alcohol per capita in different countries
@@ -32,7 +32,14 @@ This file can be downloaded from this repository "https://github.com/fivethirtye
 #### i. "airlines.csv", "airports.csv", and "routes.csv" files describing Geographic dataset to visualize the data on maps. This dataset can be accessed from https://openflights.org/data.html
 #### j. Data on New york city public schools with SAT scores and demographic information to analyzing correlation between them. This data set can be found at
 https://data.cityofnewyork.us/browse?category=Education
-#### h. Civil Rights Data Collection containing information on educational achievement and opportunities in the U.S., broken down by race and school https://catalog.data.gov/dataset/civil-rights-data-collection-2013-14
+#### k. Civil Rights Data Collection containing information on educational achievement and opportunities in the U.S., broken down by race and school https://catalog.data.gov/dataset/civil-rights-data-collection-2013-14
+#### l. "avengers.csv" containing interesting dataset compiled by the team at FiveThirtyEight to explore data from the Marvel Wikia site further (e.g. how many times superheroes reived, year the superhero introduced, etc)
+https://github.com/fivethirtyeight/data/tree/master/avengers
+#### m. "star_wars.csv" containing star wars movie series data. While waiting for Star Wars: The Force Awakens to come out, the team at FiveThirtyEight became interested in answering some questions about Star Wars fans. This dataset can be found here https://github.com/fivethirtyeight/data/tree/master/star-wars-survey
+
+
+
+## Exploring The Data
 
 ## 3. The Command Line
 ###  This is the third course in data science path. In this course, I have learnt about the command line interface. A command line interface lets us switch between folders and launch programs by typing commands. A command line interface is often faster and more powerful than a GUI for programming tasks.
@@ -48,7 +55,7 @@ https://data.cityofnewyork.us/browse?category=Education
 #### h. Piping and redirecting output
 #### i. Transforming data with Python
 #### f. Data Cleaning and Exploration using Csvkit
-#### g. Git and Version Control
+#### g. Git and Version Control including git remotes, git branches, merge conflicts and git installation and github integration
 
 ### Datasets used in this course includes:
 #### a. "hn_stories.csv" conatining dataset of submissions to Hacker News from 2006 to 2015. Hacker News is a site where users can submit articles from across the internet and others can "upvote" the articles, signifying that they like them.

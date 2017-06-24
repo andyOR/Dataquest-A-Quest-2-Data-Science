@@ -56,4 +56,23 @@ area1 = pd.read_sql_query('SELECT SUM(area_land), SUM(area_water) FROM facts whe
 print(area1['SUM(area_land)']/area1['SUM(area_water)'])
 
 
+## My Addition- High density regions
+
+import pandas as pd
+import sqlite3
+import math
+conn = sqlite3.connect('factbook.db')
+
+densit = pd.read_sql_query('SELECT name, population, area_land FROM facts where area_land !="" order by population desc;', con = conn )
+a = densit.dropna(axis = 0)
+densit = a[(a['area_land'] > 0) & (a['population'] > 0)]
+
+densit["high_densit"] = densit['population']/densit['area_land']
+hdensit= densit.sort(["high_densit"], ascending = [False])
+print(hdensit.head(20))
+#high_densit = 
+#column = densit["population", "high_densit"]
+#print(column.head())
+
+
 ## END
