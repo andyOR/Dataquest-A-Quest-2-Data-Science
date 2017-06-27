@@ -71,9 +71,13 @@ https://github.com/arnauddri/hn
 #### c. Working with Reddit API
 #### d. Web Scraping
 #### e. Introduction to SQL
+#### f. Querying SQLite From Python
+#### g. SQL and Databases
 
 ### Datasets used in this course includes:
 #### a.  "factbook.db" containing CIA World Factbook, a compendium of facts about countries. The Factbook contains demographic information for each country in the world
 https://github.com/factbook/factbook.sql
+#### b. "academy_awards.db" containing Academy Award nominations from 2001 to 2010 for just the lead and supporting acting roles. The full dataset can found here
+https://www.aggdata.com/awards/oscar
 
 
