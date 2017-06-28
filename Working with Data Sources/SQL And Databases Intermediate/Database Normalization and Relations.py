@@ -43,4 +43,56 @@ print(five_actors)
 print(five_join_table)
 
 
-## 
+## Querying A Many-To-Many Relation
+
+SELECT actors.actor FROM movies
+INNER JOIN movies_actors ON movies.id == movies_actors.movie_id
+INNER JOIN actors ON movies_actors.actor_id == actors.id
+WHERE movies.movie == "The Fighter";
+
+kings_actors = conn.execute('''SELECT actors.actor, movies.movie FROM movies 
+INNER JOIN movies_actors 
+ON movies.id == movies_actors.movie_id 
+INNER JOIN actors ON movies_actors.actor_id == actors.id 
+WHERE movies.movie == "The King's Speech";''').fetchall()
+print(kings_actors)
+
+
+## Practice: Querying A Many-To-Many Relation
+
+query = '''
+SELECT movies.movie, actors.actor from movies
+INNER JOIN movies_actors
+ON movies.id == movies_actors.movie_id
+INNER JOIN actors
+ON movies_actors.actor_id == actors.id
+WHERE actors.actor == "Natalie Portman";'''
+portman_joins = conn.execute(query).fetchall()
+print(portman_joins)
+
+
+## In this mission, we learned about 2 different kinds of relations,
+## how to query tables in a database with these kinds of relations, and the paradigm of database normalization
+
+
+## END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
