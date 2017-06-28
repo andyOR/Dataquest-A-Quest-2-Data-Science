@@ -80,4 +80,10 @@ https://github.com/factbook/factbook.sql
 #### b. "academy_awards.db" containing Academy Award nominations from 2001 to 2010 for just the lead and supporting acting roles. The full dataset can found here
 https://www.aggdata.com/awards/oscar
 
+## 5. Statistics and Algebra
+### This is the fifth course in data science path. In this course, I have learnt the basic statistics and algebraic techniques used in data science methodologies.
+
+### Datasets used in this course includes:
+#### a. "nba_stats.csv" containing statistics data from the National Basketball Association (NBA). Each row holds data on a single player for a single season. It contains the player's team, the total number of points the player scored, and other information
+
 
