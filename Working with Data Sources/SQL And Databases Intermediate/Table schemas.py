@@ -1,11 +1,15 @@
 ## In this script, we will learn to use table schemas
 ## Table schemas let us create new tables to store data. What we store may change over time, so SQL also allows us to modify the schema of a table over time
+## This definition, which contains information like column names, data types, and which column is the primary key, is called a table schema
+##  SQL databases are commonly known as relational databases because they support relations between tables
 
 
 ## Adding Columns
 
 ALTER TABLE facts
 ADD leader text;
+
+# When you add a column, all the values associated with it will be NULL to begin with
 
 
 ## Removing Columns
