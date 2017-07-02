@@ -94,5 +94,6 @@ https://www.aggdata.com/awards/oscar
 #### a. "nba_stats.csv" containing statistics data from the National Basketball Association (NBA). Each row holds data on a single player for a single season. It contains the player's team, the total number of points the player scored, and other information
 #### b. "wine_quality" containing how expert wine tasters evaluated different white wines. linear regression was used to make predictions about wine quality using existing data
 #### c. "flags.csv" containing information on flags of countries around the world. This data was collected from Collins Gem Guide to Flags
+#### d. "bike_rental_day.csv" containing dataset of bike share riding program in Washington D.C. compiled by Hadi Fanaee-T at the University of Porto, and can be downloaded here http://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset
 
 
