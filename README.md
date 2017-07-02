@@ -83,8 +83,16 @@ https://www.aggdata.com/awards/oscar
 ## 5. Statistics and Algebra
 ### This is the fifth course in data science path. In this course, I have learnt the basic statistics and algebraic techniques used in data science methodologies.
 
+### This course includes:
+#### a. Introduction to Statistics
+#### b. Standard deviation and Correlation
+#### c. Linear Regression
+#### d. Distributions and Sampling
+#### e. Introduction to Probability
+
 ### Datasets used in this course includes:
 #### a. "nba_stats.csv" containing statistics data from the National Basketball Association (NBA). Each row holds data on a single player for a single season. It contains the player's team, the total number of points the player scored, and other information
 #### b. "wine_quality" containing how expert wine tasters evaluated different white wines. linear regression was used to make predictions about wine quality using existing data
+#### c. "flags.csv" containing information on flags of countries around the world. This data was collected from Collins Gem Guide to Flags
 
 
