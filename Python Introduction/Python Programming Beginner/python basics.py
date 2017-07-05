@@ -27,7 +27,7 @@ china_name = "China"
 china_exact = 122.5
 print(type(china_exact))
 
-## converting data types in pyhton
+## converting data types in python
 china_rounded = 123
 int_to_str = str(china_rounded)
 str_to_int = int(int_to_str)
