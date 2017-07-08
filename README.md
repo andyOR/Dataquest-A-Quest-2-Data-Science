@@ -10,7 +10,8 @@
 #### c. "la_weather.csv" contains daily weather data for Los Angeles (L.A.) during 2014
 #### d. "dictionary.txt" containing correctly spell words to check other files for incorrect words
 #### d. "US_births_1994-2003_CDC_NCHS.csv" contains U.S. births data set of babies born on different dates of the month and days of the week. This was used to analyze a superstitious notion around Birthday among Parents https://raw.githubusercontent.com/fivethirtyeight/data/master/births/US_births_1994-2003_CDC_NCHS.csv
-
+#### e. "legislators.csv" containing information on every historical member of the U.S. Congress.
+#### f. "student_loan_defaults.csv" containing dataset with every row representing a single university, and contains information about the number of its students who later defaulted on their loans
 
 ## 2. Data Analysis and Visualization 
 ###     This is the second course in the data scientist path. In this course, I have learnt NumPy, Pandas libraries (pandas internals, series, dataframes), Data manipulation, working with missing data, creating Line Charts, Multiple plots, histograms, bar and scatter plots, conditional plots etc.It also includes data cleaning techniques, merging different datasets, analyzing and visualizing data.
