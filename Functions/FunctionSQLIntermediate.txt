@@ -1,0 +1,127 @@
+Functions
+1.	SQL Intermediate Basics
+a.	To see the data types of each column in a table, you can use the PRAGMA statement:
+PRAGMA table_info(facts);
+
+b.	Inserting Data into a Table
+INSERT INTO facts
+VALUES (262, "dq", "DataquestLand", 60000, 40000, 20000, 500000, 100, 50, 10, 20, "2016-02-25 12:00:00", "2016-02-25 12:00:00");
+
+c.	Missing Values
+SELECT * FROM facts 
+WHERE area IS NULL;
+
+insert into facts
+values (263, "dq", "DataquestLand", NULL, NULL, 20000, 500000, 100, 50, 10, 20, "2016-02-25 12:00:00", "2016-02-25 12:00:00");
+
+d.	Updating rows
+UPDATE facts
+SET name="New Zealand", code="nz"
+WHERE name="Australia"
+
+e.	Deleting rows
+delete from facts
+where name="Canada";
+
+f.	Adding and Removing Columns to Table
+ALTER TABLE facts
+ADD leader text;
+
+ALTER TABLE facts
+DROP COLUMN awesomeness;
+
+g.	Creating Tables
+CREATE TABLE factbook.leaders(
+   id integer PRIMARY KEY,
+   name text,
+   country text
+);
+
+h.	Creating tables with relations
+CREATE TABLE factbook.states(
+    id integer PRIMARY KEY,
+    name text,
+    area integer,
+    country integer,
+    FOREIGN KEY(country) REFERENCES facts(id)
+);
+
+i.	Querying across foreign keys
+select * from landmarks
+INNER JOIN facts
+ON landmarks.country==facts.id;
+
+j.	Left join table
+select * from landmarks
+LEFT OUTER JOIN facts
+ON landmarks.country==facts.id;
+
+k.	Querying from normalized database
+SELECT movie FROM nominations 
+INNER JOIN ceremonies
+ON nominations.ceremony_id == ceremonies.id
+WHERE ceremonies.year == 2010 AND nominations.won == 1;
+
+query = 'select ceremonies.year, nominations.movie from nominations INNER JOIN ceremonies ON nominations.ceremony_id == ceremonies.id where nominations.nominee == "Natalie Portman";'
+portman_movies = conn.execute(query).fetchall()
+print(portman_movies)
+
+l.	Join Table
+SELECT actors.actor FROM movies
+INNER JOIN movies_actors ON movies.id == movies_actors.movie_id
+INNER JOIN actors ON movies_actors.actor_id == actors.id
+WHERE movies.movie == "The Fighter";
+
+kings_actors = conn.execute('''SELECT actors.actor, movies.movie FROM movies 
+INNER JOIN movies_actors 
+ON movies.id == movies_actors.movie_id 
+INNER JOIN actors ON movies_actors.actor_id == actors.id 
+WHERE movies.movie == "The King's Speech";''').fetchall()
+print(kings_actors)
+
+m.	Unique value counts in list
+cols = aca_cols[4:11]
+for i in cols:
+    r = academy[i].value_counts()
+    print(i)
+    print(r)
+
+n.	To select first few strings in column of list and convert to integer
+academy["Year"] = academy["Year"].str[0:4]
+academy["Year"] = academy["Year"].astype("int64")
+
+o.	Conditional filtering to select only rows with specified strings
+later_than_2000 = academy[academy["Year"]> 2000]
+award_categories = ["Actor -- Leading Role", 
+                    "Actor -- Supporting Role",
+                    "Actress -- Leading Role",
+                    "Actress -- Supporting Role"]
+nominations = later_than_2000[later_than_2000["Category"].isin(award_categories)]
+
+additional_info_one = final_nominations["Additional Info"].str.rstrip("'}")
+additional_info_two = additional_info_one.str.split(" {'")
+movie_names = additional_info_two.str[0]
+characters = additional_info_two.str[1]
+final_nominations["Movie"] = movie_names
+final_nominations["Characters"] = characters
+final_nominations.head()
+
+p.	Series method map()
+replace = {"NO":0, "YES":1}
+nominations["Won?"]= nominations["Won?"].map(replace)
+
+q.	Drop() function to drop column
+drop = ["Won?","Unnamed: 5", "Unnamed: 6","Unnamed: 7", "Unnamed: 8", "Unnamed: 9", "Unnamed: 10"]
+final_nominations = nominations.drop(drop, axis=1)
+
+r.	Exporting to SQLite
+import sqlite3
+conn = sqlite3.connect("nominations.db")
+
+final_nominations.to_sql("nominations", con=conn, index = False)
+
+
+
+
+
+
