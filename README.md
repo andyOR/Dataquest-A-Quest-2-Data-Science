@@ -38,10 +38,6 @@ https://data.cityofnewyork.us/browse?category=Education
 https://github.com/fivethirtyeight/data/tree/master/avengers
 #### m. "star_wars.csv" containing star wars movie series data. While waiting for Star Wars: The Force Awakens to come out, the team at FiveThirtyEight became interested in answering some questions about Star Wars fans. This dataset can be found here https://github.com/fivethirtyeight/data/tree/master/star-wars-survey
 
-
-
-## Exploring The Data
-
 ## 3. The Command Line
 ###  This is the third course in data science path. In this course, I have learnt about the command line interface. A command line interface lets us switch between folders and launch programs by typing commands. A command line interface is often faster and more powerful than a GUI for programming tasks.
 
@@ -98,7 +94,7 @@ https://www.aggdata.com/awards/oscar
 #### d. "bike_rental_day.csv" containing dataset of bike share riding program in Washington D.C. compiled by Hadi Fanaee-T at the University of Porto, and can be downloaded here http://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset
 
 ## 6. Machine Learning
-### ### This is the sixth course in data science path. In this course, I have learnt the machine learning fundamentals used in data science methodologies.
+### This is the sixth course in data science path. In this course, I have learnt the machine learning fundamentals used in data science methodologies.
 
 ### Datasets used in this course includes:
 #### a. "dc_airbnb.csv" contains dataset from october 2015 on specific listing that's available for renting on AirBnB in the Washington, D.C. area
