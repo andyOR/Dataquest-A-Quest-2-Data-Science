@@ -97,4 +97,11 @@ https://www.aggdata.com/awards/oscar
 #### c. "flags.csv" containing information on flags of countries around the world. This data was collected from Collins Gem Guide to Flags
 #### d. "bike_rental_day.csv" containing dataset of bike share riding program in Washington D.C. compiled by Hadi Fanaee-T at the University of Porto, and can be downloaded here http://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset
 
+## 6. Machine Learning
+### ### This is the sixth course in data science path. In this course, I have learnt the machine learning fundamentals used in data science methodologies.
+
+### Datasets used in this course includes:
+#### a. "dc_airbnb.csv" contains dataset from october 2015 on specific listing that's available for renting on AirBnB in the Washington, D.C. area
+
+
 
