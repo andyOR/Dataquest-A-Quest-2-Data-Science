@@ -102,3 +102,33 @@ print(avg_rmse)
 
 ## Performing K-Fold Cross Validation Using Scikit-Learn
 
+from sklearn.cross_validation import KFold
+from sklearn.cross_validation import cross_val_score
+kf = KFold(len(dc_listings), 5, shuffle=True, random_state=1)
+model = KNeighborsRegressor()
+mses = cross_val_score(model, dc_listings[["accommodates"]], dc_listings["price"], scoring="mean_squared_error", cv=kf)
+rmses = [np.sqrt(np.absolute(mse)) for mse in mses]
+avg_rmse = np.mean(rmses)
+
+print(rmses)
+print(avg_rmse)
+
+
+## Exploring Different K Values
+
+from sklearn.cross_validation import KFold
+from sklearn.cross_validation import cross_val_score
+num_folds = [3, 5, 7, 9, 10, 11, 13, 15, 17, 19, 21, 23]
+
+for fold in num_folds:
+    kf = KFold(len(dc_listings), fold, shuffle=True, random_state=1)
+    model = KNeighborsRegressor()
+    mses = cross_val_score(model, dc_listings[["accommodates"]], dc_listings["price"], scoring="mean_squared_error", cv=kf)
+    rmses = [np.sqrt(np.absolute(mse)) for mse in mses]
+    avg_rmse = np.mean(rmses)
+    std_rmse = np.std(rmses)
+    print(str(fold), "folds: ", "avg RMSE: ", str(avg_rmse), "std RMSE: ", str(std_rmse))
+
+
+## END
+
