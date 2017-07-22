@@ -96,8 +96,12 @@ https://www.aggdata.com/awards/oscar
 ## 6. Machine Learning
 ### This is the sixth course in data science path. In this course, I have learnt the machine learning fundamentals used in data science methodologies.
 
+### This course includes:
+#### a. 
+
 ### Datasets used in this course includes:
 #### a. "dc_airbnb.csv" contains dataset from october 2015 on specific listing that's available for renting on AirBnB in the Washington, D.C. area
+#### b. "AmesHousing.txt" conatining dataset on sold houses in Ames, Iowa. Each row in the dataset describes the properties of a single house as well as the amount it was sold for. This dataset was originally compiled by Dean De Cock for the primary purpose of having a high quality dataset for regression. Dataset ca be downloaded here https://ww2.amstat.org/publications/jse/v19n3/decock/AmesHousing.txt
 
 
 
