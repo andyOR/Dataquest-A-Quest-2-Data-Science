@@ -102,13 +102,15 @@ https://www.aggdata.com/awards/oscar
 #### c. Linear Algebra for Machine Learning
 #### d. Linear Regression of Machine Learning
 #### e. Machine Learning in Python
-#### d. Decision Trees
-#### e. Machine Learning Project
+#### f. Supervised and Unsupervised Machine Learning
+#### g. Decision Trees
+#### h. Machine Learning Project
 
 ### Datasets used in this course includes:
 #### a. "dc_airbnb.csv" contains dataset from october 2015 on specific listing that's available for renting on AirBnB in the Washington, D.C. area
 #### b. "AmesHousing.txt" conatining dataset on sold houses in Ames, Iowa. Each row in the dataset describes the properties of a single house as well as the amount it was sold for. This dataset was originally compiled by Dean De Cock for the primary purpose of having a high quality dataset for regression. Dataset ca be downloaded here https://ww2.amstat.org/publications/jse/v19n3/decock/AmesHousing.txt
 #### c. "auto.csv" dataset which contains information on various cars. For each car, there is information on the technical aspects of the vehicle such as the motor's displacement, the weight of the car, the miles per gallon, and how fast the car accelerates. Using this information we will predict the origin of the vehicle, either North America, Europe, or Asia. The dataset can be found at https://archive.ics.uci.edu/ml/datasets/Auto+MPG
+#### d. "114_congress.csv" contains all of the results of roll call votes from the 114th Senate. Each row represents a single Senator, and each column represents a vote. The Dataset can be found here https://github.com/unitedstates/congress
 
 
 
