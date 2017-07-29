@@ -80,5 +80,6 @@ train_rmse_2 = (mean_squared_error(train['SalePrice'], predictions_train))** (1/
 test_rmse_2 = (mean_squared_error(test['SalePrice'], predictions_test))** (1/2)
 
 
+
 ## END
 
