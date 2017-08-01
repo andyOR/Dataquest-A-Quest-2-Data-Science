@@ -113,4 +113,9 @@ https://www.aggdata.com/awards/oscar
 #### d. "114_congress.csv" contains all of the results of roll call votes from the 114th Senate. Each row represents a single Senator, and each column represents a vote. The Dataset can be found here https://github.com/unitedstates/congress
 
 
+## 7. Advanced Python and Computer Science
+
+
+
+
 
