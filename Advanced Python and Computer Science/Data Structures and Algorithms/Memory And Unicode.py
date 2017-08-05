@@ -108,3 +108,257 @@ binary_bracket = bin(ord("}"))
 
 ## Introduction To Unicode
 
+# We can initialize Unicode code points (the value for this code point is \u27F6, but you see it as a character here because the Dataquest system is automatically converting it).
+code_point = "⟶"
+
+# This particular code point maps to a right arrow character.
+print(code_point)
+
+# We can get the base 10 integer value of the code point with the ord function.
+print(ord(code_point))
+
+# As you can see, this takes up a lot more than 1 byte.
+print(bin(ord(code_point)))
+
+binary_1019 = bin(ord("\u1019"))
+
+
+## Strings With Unicode
+
+s1 = "café"
+# The \u prefix means "the next four digits are a Unicode code point"
+# It doesn't change the value at all (the last character in the string below is \u00e9)
+s2 = "café"
+
+# These strings are the same, because code points are equal to their corresponding Unicode characters.
+# \u00e9 and é are equivalent.
+print(s1 == s2)
+
+s3 = "hey %"
+
+
+## The Bytes Data Type
+
+# We can make a string with some Unicode values
+superman = "Clark Kent␦"
+print(superman)
+
+# This tells Python to encode the string superman as Unicode using the UTF-8 encoding system
+# We end up with a sequence of bytes instead of a string
+superman_bytes = "Clark Kent␦".encode("utf-8")
+
+batman = "Bruce Wayne␦"
+batman_bytes = batman.encode("utf-8")
+
+
+## Introduction To HexaDecimal
+
+
+## Hexadecimal Conversions
+
+# F is the highest single digit in hexadecimal (base 16)
+# Its value is 15 in base 10
+print(int("F", 16))
+
+# A in base 16 has the value 10 in base 10
+print(int("A", 16))
+
+# Just like the earlier binary_add function, this adds two hexadecimal numbers
+def hexadecimal_add(a, b):
+    return hex(int(a, 16) + int(b, 16))[2:]
+
+# When we add 1 to 9 in hexadecimal, it becomes "a"
+value = "9"
+value = hexadecimal_add(value, "1")
+print(value)
+
+hex_ea = hexadecimal_add("2", "ea")
+hex_ef = hexadecimal_add("e", "f")
+
+
+## Hex To Binary
+
+# One byte (eight bits) in hexadecimal (the value of the byte below is \xe2)
+hex_byte = "â"
+
+# Print the base 10 integer value for the hexadecimal byte
+print(ord(hex_byte))
+
+# This gives the exact same value. Remember that \x is just a prefix, and doesn't affect the value.
+print(int("e2", 16))
+
+# Convert the base 10 integer to binary
+print(bin(ord("â")))
+
+binary_aa = bin(ord("\xaa"))
+print(binary_aa)
+binary_ab = bin(ord("\xab"))
+
+
+## Bytes And Strings
+
+hulk_bytes = "Bruce Banner␦".encode("utf-8")
+
+# We can't mix strings and bytes
+# For instance, if we try to replace the Unicode ␦ character as a string, it won't work, because that value has been encoded to bytes
+try:
+    hulk_bytes.replace("Banner", "")
+except Exception:
+    print("TypeError with replacement")
+
+# We can create objects of the bytes data type by putting a b in front of the quotation marks in a string
+hulk_bytes = b"Bruce Banner"
+# Now, instead of mixing strings and bytes, we can use the replace method with bytes objects instead
+hulk_bytes.replace(b"Banner", b"")
+thor_bytes = b"Thor"
+
+
+## Decode Bytes To Strings
+
+# Make a bytes object with aquaman's secret identity
+aquaman_bytes = b"Who knows?"
+
+# Now, we can use the decode method, along with the encoding system (UTF-8) to turn it into a string
+aquaman = aquaman_bytes.decode("utf-8")
+
+# We can print the value and type to verify that it's a string
+print(aquaman)
+print(type(aquaman))
+
+morgan_freeman_bytes = b"Morgan Freeman"
+morgan_freeman = morgan_freeman_bytes.decode("utf-8")
+
+
+## Read In File Data
+
+# We can read our data in using csvreader
+import csv
+# When we open a file, we can specify the system used to encode it (in this case, UTF-8).
+f = open("sentences_cia.csv", 'r', encoding="utf-8")
+csvreader = csv.reader(f)
+sentences_cia = list(csvreader)
+
+# The data consists of two columns
+# The first column contains the year, and the second contains a sentence from a CIA report written in that year
+# Print the first column of the second row
+print(sentences_cia[1][0])
+
+# Print the second column of the second row
+print(sentences_cia[1][1])
+
+sentences_ten = sentences_cia[9][1]
+
+
+## Convert To A Dataframe
+
+import csv
+# Let's read in the legislators data from a few missions ago
+f = open("legislators.csv", 'r', encoding="utf-8")
+csvreader = csv.reader(f)
+legislators = list(csvreader)
+
+# Now, we can import pandas and use the DataFrame class to convert the list of lists to a dataframe.
+import pandas as pd
+
+legislators_df = pd.DataFrame(legislators)
+
+# As you can see, the first row contains the headers, which we don't want (because they're not actually data)
+print(legislators_df.iloc[0,:])
+
+# To remove the headers, we'll subset the df and pass them in separately
+# This code removes the headers from legislators, and instead passes them into the columns argument
+# The columns argument specifies column names
+legislators_df = pd.DataFrame(legislators[1:], columns=legislators[0])
+# We now have the right data in the first row, as well as the proper headers
+print(legislators_df.iloc[0,:])
+
+# The sentences_cia data from the last screen is available.
+
+sentences_cia = pd.DataFrame(sentences_cia[1:], columns=sentences_cia[0])
+
+
+## Clean Up Sentences
+
+# The integer codes for all the characters we want to keep
+good_characters = [48, 49, 50, 51, 52, 53, 54, 55, 56, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 32]
+
+sentence_15 = sentences_cia["statement"][14]
+
+# Iterate over the characters in the sentence, and only take those whose integer representations are in good_characters
+# This will construct a list of single characters
+cleaned_sentence_15_list = [s for s in sentence_15 if ord(s) in good_characters]
+
+# Join the list together, separated by "" (no space), which creates a string again
+cleaned_sentence_15 = "".join(cleaned_sentence_15_list)
+
+def clean_statement(row):
+    good_characters = [48, 49, 50, 51, 52, 53, 54, 55, 56, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 32]
+    statement = row["statement"]
+    clean_statement_list = [s for s in statement if ord(s) in good_characters]
+    return "".join(clean_statement_list)
+
+sentences_cia["cleaned_statement"] = sentences_cia.apply(clean_statement, axis=1)
+
+
+## Tokenize Statements
+
+# We can use the .join() method on strings to join lists together.
+# The string we use the method on will become the separator -- the character(s) between each string when they are joined..
+combined_statements = " ".join(sentences_cia["cleaned_statement"])
+statement_tokens = combined_statements.split(" ")
+
+
+## Filter The Tokens
+
+# statement_tokens has been loaded in.
+filtered_tokens = [s for s in statement_tokens if len(s) >= 5]
+
+
+## Count The Tokens
+
+from collections import Counter
+fruits = ["apple", "apple", "banana", "orange", "pear", "orange", "apple", "grape"]
+fruit_count = Counter(fruits)
+
+# Our code has counted each of the items in the list, and given them dictionary keys
+print(fruit_count)
+
+# filtered_tokens has been loaded in
+
+filtered_token_counts = Counter(filtered_tokens)
+
+
+## Most Common Tokens
+
+from collections import Counter
+fruits = ["apple", "apple", "banana", "orange", "pear", "orange", "apple", "grape"]
+fruit_count = Counter(fruits)
+
+# We can use the most_common method of a Counter class to get the most common items
+# We pass in a number, which is the number of items we want to get
+print(fruit_count.most_common(2))
+print(fruit_count.most_common(3))
+
+# filtered_token_counts has been loaded in
+common_tokens = filtered_token_counts.most_common(3)
+
+
+## Finding The Most Common Tokens By Year
+
+# sentences_cia has been loaded in.
+# It already has the cleaned_statement column.
+from collections import Counter
+def find_most_common_by_year(year, sentences_cia):
+    data = sentences_cia[sentences_cia["year"] == year]
+    combined_statement = " ".join(data["cleaned_statement"])
+    statement_split = combined_statement.split(" ")
+    counter = Counter([s for s in statement_split if len(s) > 4])
+    return counter.most_common(2)
+
+common_2000 = find_most_common_by_year("2000", sentences_cia)
+common_2002 = find_most_common_by_year("2002", sentences_cia)
+common_2013 = find_most_common_by_year("2013", sentences_cia)
+
+
+## END
+
