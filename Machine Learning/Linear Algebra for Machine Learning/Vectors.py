@@ -5,7 +5,7 @@
 
 
 ## Geometric Intuition Of Vectors
-
+import matplotlib.pyplot as plt
 import numpy as np
 
 # This code draws the x and y axis as lines.
