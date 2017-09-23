@@ -119,5 +119,9 @@ https://www.aggdata.com/awards/oscar
 
 ### This is the eighth course in data science path. In this course, I have learnt the big data tool processing kits such as Mapreduce and Spark.
 
+### This course includes:
+#### a. Introduction to Spark
+#### b. Spark Installation and Jupyter Notebook Integration
+
 
 
