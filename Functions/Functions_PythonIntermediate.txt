@@ -1,0 +1,144 @@
+Functions
+1.	Python Basics
+a.	Square root function
+import math
+root = math.sqrt(99)
+
+b.	Floor Function to round off to integer
+import math
+flr = math.floor(89.9)
+
+c.	Variables Within Modules
+import math
+
+print(math.pi)
+a = math.sqrt(math.pi)
+b = math.ceil(math.pi)
+c = math.floor(math.pi)
+
+d.	Csv reader function
+import csv
+f = open("nfl.csv", 'r')
+csvreader = csv.reader(f)
+nfl = list(csvreader)
+
+e.	Classes and objects
+class Dataset:
+    def __init__(self):
+        self.type = "csv"
+class Dataset:
+    def __init__(self, data):
+        self.data = data
+
+f = open("nfl.csv", 'r')
+csvreader = csv.reader(f)
+nfl_data = list(csvreader)
+
+nfl_dataset = Dataset(nfl_data)
+dataset_data = nfl_dataset.data
+
+f.	Enumerate function in modules
+class Dataset:
+    def __init__(self, data):
+        self.header = data[0]
+        self.data = data[1:]
+    
+    def column(self, label):
+        if label not in self.header:
+            return None
+        
+        index = 0
+        for idx, element in enumerate(self.header):
+            if label == element:
+                index = idx
+        
+        column = []
+        for row in self.data:
+            column.append(row[index])
+        return column
+
+nfl_dataset = Dataset(nfl_data)
+year_column = nfl_dataset.column('year')
+player_column = nfl_dataset.column('player')
+
+g.	Set() function for unique elements
+unique_animals = set(["Dog", "Cat", "Hippo", "Dog", "Cat", "Dog", "Dog", "Cat"])
+print(unique_animals)
+
+h.	Try and except block
+try:
+    int('')
+except Exception:
+    print("There was an error")
+
+try:
+    int('')
+except Exception:
+    pass
+
+i.	Add a column in dataset
+for row in legislators:
+    y = row[2].split('-')[0]
+    try:
+        birth_year = int(y)
+    except Exception:
+        birth_year = 0
+    row.append(birth_year)
+    
+print(legislators[0:10])
+
+j.	Filling missing values in column with last value
+last_value = 1
+for row in legislators:
+    
+    if row[7] == 0:
+        row[7] = last_value
+    last_value = row[7]
+        
+k.	Enumerate function to use multiple list in tandem
+animals = ["Dog", "Tiger", "SuperLion", "Cow", "Panda"]
+viciousness = [1, 5, 10, 10, 1]
+
+for i, animal in enumerate(animals):
+    print("Animal")
+    print(animal)
+    print("Viciousness")
+    print(viciousness[i])
+
+things = [["apple", "monkey"], ["orange", "dog"], ["banana", "cat"]]
+trees = ["cedar", "maple", "fig"]
+
+for  i, thing in enumerate(things):
+    thing.append(trees[i])
+    
+l.	Short for loops
+apple_prices = [100, 101, 102, 105]
+apple_prices_doubled = [apple*2 for apple in apple_prices]
+apple_prices_lowered = [apple-100 for apple in apple_prices]
+
+m.	Highest value with None
+values = [-50, -80, -100]
+max_value = None
+for i in values:
+    if max_value is None or i > max_value:
+        max_value = i
+
+max_value = None
+for k in name_counts:
+    count = name_counts[k]
+    if max_value is None or count > max_value:
+        max_value = count
+
+n.	Items() function for finding highest items
+highest_male_count = None
+
+for name in male_name_counts:
+    count = male_name_counts[name]
+    if highest_male_count is None or count > highest_male_count:
+        highest_male_count = count
+        
+top_male_names = []
+
+for male, count in male_name_counts.items():
+    if count == highest_male_count:
+        top_male_names.append(male)
