@@ -117,7 +117,7 @@ https://www.aggdata.com/awards/oscar
 
 ## 8. R Programming
 
-## 8. Spark and Mapreduce
+## 9. Spark and Mapreduce
 
 ### This is the eighth course in data science path. In this course, I have learnt the big data tool processing kits such as Mapreduce and Spark.
 
