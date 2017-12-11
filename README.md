@@ -115,9 +115,8 @@ https://www.aggdata.com/awards/oscar
 
 ## 7. Advanced Python and Computer Science
 
-## 8. R Programming
 
-## 9. Spark and Mapreduce
+## 8. Spark and Mapreduce
 
 ### This is the eighth course in data science path. In this course, I have learnt the big data tool processing kits such as Mapreduce and Spark.
 
@@ -126,4 +125,20 @@ https://www.aggdata.com/awards/oscar
 #### b. Spark Installation and Jupyter Notebook Integration
 
 
+## 8. R Programming
+
+
+## 10. Advanced topics in Data Science
+
+### This is the tenth course in data science specialization. It introduces advanced topics in data science, kaggle competition and natural language processing.
+
+### This course includes:
+#### a. Kaggle fundamentals
+#### b. Advanced topics in data science
+#### c. Natural language processing 
+
+### Datasets used in this course includes:
+#### a. Hacker news dataset for predicting the number of upvotes the articles received, based on their headlines. The dataset can be found at developer Arnaud Drizard github repo https://github.com/arnauddri/hn
+#### b. Kaggle titanic competition dataset
+#### c. National basketball association dataset for clustering similar players in NBA
 
